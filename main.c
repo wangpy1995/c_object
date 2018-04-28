@@ -3,8 +3,8 @@
 
 int main() {
     dog_t *dog = dog_init("www");
-    dog->base->behavior->eat("bone");
-    dog->base->behavior->walk(4);
-    dog->base->behavior->talk("wang wang wang");
-    dog_dead(dog);
+    animal_eat((animal_t *) dog, "bone");
+    animal_walk((animal_t *) dog, 4);
+    animal_talk((animal_t *) dog, "wang wang wang");
+    animal_dead((animal_t *) dog);
 }

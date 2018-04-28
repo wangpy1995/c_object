@@ -26,7 +26,7 @@ extern animal_t *animal_init(const char *name);
 
 extern void animal_eat(animal_t *animal, char *food);
 
-extern void animal_walk(animal_t *animal, char *step);
+extern void animal_walk(animal_t *animal, int step);
 
 extern void animal_talk(animal_t *animal, char *msg);
 
