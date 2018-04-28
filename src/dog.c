@@ -20,7 +20,7 @@ void dog_talk(const char *msg) {
 
 dog_t *dog_init(const char *owner) {
     dog_t *dog = (dog_t *) malloc(sizeof(dog_t));
-    animal_t *animal = (animal_t *) animal_init("doggggggggggggg");
+    animal_t *animal = animal_init("doggggggggggggg");
     memcpy(&(dog->base), animal, sizeof(animal_t));
 
     dog->base.behavior->eat = dog_eat;
